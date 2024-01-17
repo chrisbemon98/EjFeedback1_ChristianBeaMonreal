@@ -107,7 +107,7 @@ if IMPRIMIR_EN_FICHERO:
         with open(ruta_archivo_simple, "w") as archivo_simple:
             archivo_simple.write(str_titulo_pacientes_agregados() + "\n")
 
-            archivo_simple.write("ID\t\t\t\t| " + str_atributos_pacientes(pacientes_agregados, "identificador") + "\n")
+            archivo_simple.write("ID\t\t| " + str_atributos_pacientes(pacientes_agregados, "identificador") + "\n")
             archivo_simple.write("Nivel urgencia\t| " + str_atributos_pacientes(pacientes_agregados, "nivel_urgencia") + "\n")
             archivo_simple.write("Horas espera\t| " + str_atributos_pacientes(pacientes_agregados, "horas_espera") + "\n")
 
@@ -115,6 +115,6 @@ if IMPRIMIR_EN_FICHERO:
 
             archivo_simple.write(str_titulo_pacientes_atendidos() + "\n")
 
-            archivo_simple.write("ID\t\t\t\t| " + str_atributos_pacientes(pacientes_atendidos, "identificador") + "\n")
+            archivo_simple.write("ID\t\t| " + str_atributos_pacientes(pacientes_atendidos, "identificador") + "\n")
             archivo_simple.write("Nivel urgencia\t| " + str_atributos_pacientes(pacientes_atendidos, "nivel_urgencia") + "\n")
             archivo_simple.write("Horas espera\t| " + str_atributos_pacientes(pacientes_atendidos, "horas_espera") + "\n")

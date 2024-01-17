@@ -64,7 +64,7 @@ if IMPRIMIR_POR_CONSOLA:
 
         print("\n")
 
-        print(str_titulo_pacientes_agregados())
+        print(str_titulo_pacientes_atendidos())
 
         print(str_pacientes(pacientes_atendidos))
 
@@ -97,7 +97,7 @@ if IMPRIMIR_EN_FICHERO:
 
             archivo_detallado.write("\n" + "\n")
 
-            archivo_detallado.write(str_titulo_pacientes_agregados() + "\n")
+            archivo_detallado.write(str_titulo_pacientes_atendidos() + "\n")
 
             archivo_detallado.write(str_pacientes(pacientes_atendidos) + "\n")
 
